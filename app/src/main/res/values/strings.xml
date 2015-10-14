@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">AndoridCrop</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="cropview_load_error">bitmap load failed~~!</string>
+    <string name="choose_pic">choose picture</string>
+
+</resources>

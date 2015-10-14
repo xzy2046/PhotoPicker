@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#d9000000">
+
+    <com.xzy.andoridcrop.cropImage.TMImlabCropView
+            android:id="@+id/crop_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+    <ProgressBar
+            android:id="@+id/loading"
+            style="@android:style/Widget.Holo.ProgressBar.Large"
+            android:visibility="invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:indeterminate="true"
+            android:indeterminateOnly="true"
+            android:background="@android:color/transparent"/>
+
+    <LinearLayout
+            android:id="@+id/control_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/crop_view"
+            android:layout_marginTop="51dp"
+            android:orientation="horizontal">
+        <RelativeLayout android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="10">
+            <TextView
+                    android:id="@+id/rotate_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/rotate_button_normal"
+                    android:layout_centerInParent="true"
+                    />
+        </RelativeLayout>
+    </LinearLayout>
+    <Button android:id="@+id/done"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="完成"
+
+            />
+</RelativeLayout>
